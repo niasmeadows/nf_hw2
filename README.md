@@ -1,6 +1,6 @@
 # nf_hw2
 nextflow homework 2
-# Trim and Assemble Paired-End FastQ 
+# Assemble, QA, Genotype Paired-End FastQ 
 
 ## Objective of this workflow (besides just for a homework assignment)
 This Nextflow workflow is designed to take paired-end reads, assemble them, and quality assess/genotype in parallel. The script takes paired-end reads in fastq.gz format as input and performs assembly with SPAdes to generate fasta format output files then does MLST and QUAST.
@@ -18,7 +18,6 @@ Paired-end reads in fastq.gz format. Naming conventions of these files should be
 
 ## WHAT TO SPECIFY
 1. `params.reads`: the input paired-end reads in fastq.gz format.
-2. `params.outdir`: the output directory where the assembled fasta files will be put
 
 ## THE FLOW
 To execute the workflow, follow these steps:
@@ -29,4 +28,4 @@ To execute the workflow, follow these steps:
    ```
 
 ## WHATS COMING OUT
-The workflow will produce trimmed and assembled fasta files for each pair of reads. These files can be found in the specified output directory.
+The workflow will produce assembled fasta files, MLST summary files and quality assessment reports for each pair of reads. These files can be found in the specified output directory or base directory.
