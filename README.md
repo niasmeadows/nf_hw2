@@ -24,7 +24,7 @@ To execute the workflow, follow these steps:
 1. Install the appropriate packages.
 2. Execute the workflow using the following command:
    ```
-   nextflow run workflow_HW2.nf
+   nextflow run workflow_HW2.groovy
    ```
 
 ## WHATS COMING OUT
